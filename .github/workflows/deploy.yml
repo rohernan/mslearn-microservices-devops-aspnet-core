@@ -14,7 +14,7 @@ jobs:
       uses: azure/login@v1.4.5
       with:
         creds: ${{ secrets.AZ_SP }}
-        environment: ${{ variables.AZ_CLOUD }}
+        environment: 'AzureUSGovernment'
         
     - name: Azure Kuberentes set context
       uses: Azure/aks-set-context@v2
